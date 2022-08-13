@@ -48,7 +48,7 @@ void swap_fun(int *arr, int i, int j)
 int smallest_val(int *arr, int start, int end)
 {
 	int i = start;
-	int j = i;
+	int j = i + 1;
 
 	while (i <= end)
 	{
@@ -56,7 +56,7 @@ int smallest_val(int *arr, int start, int end)
 		{
 			j = i;
 		}
-		i += 1;
+		i++;
 	}
 	return (j);
 }
