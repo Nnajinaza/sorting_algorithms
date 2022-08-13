@@ -10,6 +10,9 @@ void selection_sort(int *array, size_t size)
 	size_t i = 0;
 	int j;
 
+	if (array == NULL || size < 2)
+		return;
+
 	while (i < (size - 1))
 	{
 		j = smallest_val(array, i, size - 1);
@@ -21,27 +24,33 @@ void selection_sort(int *array, size_t size)
 
 /**
  * swap_fun - function to swap the values of a list
+ * @arr: pointer to the array
  * @i: the first argument passed
  * @j: the second argumebt passed
  */
 void swap_fun(int *arr, int i, int j)
 {
-	int temp = arr[i];
+	int temp;
+
+	temp = arr[i];
 	arr[i] = arr[j];
 	arr[j] = temp;
 }
 
 /**
  * smallest_val - function to look for the position of the smallest value
+ * @arr: pointer to the array
  * @start: beginning of the array
  * @end: end of the array
+ *
+ * Return: j
  */
 int smallest_val(int *arr, int start, int end)
 {
 	int i = start;
 	int j = i;
 
-	while(i <= end)
+	while (i <= end)
 	{
 		if (arr[i] < arr[j])
 		{
@@ -49,5 +58,5 @@ int smallest_val(int *arr, int start, int end)
 		}
 		i += 1;
 	}
-	return j;
+	return (j);
 }
