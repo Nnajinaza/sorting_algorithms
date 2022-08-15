@@ -38,7 +38,7 @@ void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
 /* helper functions */
-void swap_fun(int *arr, int i, int j);
+void swap_fun(int *i, int *j);
 int smallest_val(int *arr, int start, int end);
 
 #endif
