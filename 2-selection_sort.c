@@ -17,8 +17,9 @@ void selection_sort(int *array, size_t size)
 	{
 		j = smallest_val(array, i, size - 1);
 		swap_fun(array, i, j);
-		print_array(array, size);
 		i++;
+		if (i != (size - 1))
+			print_array(array, size);
 	}
 }
 
