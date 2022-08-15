@@ -39,6 +39,8 @@ void quick_sort_hoare(int *array, size_t size);
 
 /* helper functions */
 void swap_fun(int *i, int *j);
-int smallest_val(int *arr, int start, int end);
+void swap_sort(int *array, int i, int j);
+int split(int *array, int first_val, int sec_val, size_t size);
+void sorting(int *array, int first_val, int sec_val, size_t size);
 
 #endif

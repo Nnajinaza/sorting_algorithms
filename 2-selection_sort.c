@@ -30,9 +30,8 @@ void selection_sort(int *array, size_t size)
 
 /**
  * swap_fun - function to swap the values of a list
- * @arr: pointer to the array
- * @i: the first argument passed
- * @j: the second argumebt passed
+ * @i: pointer to the first argument passed
+ * @j: pointer to the second argumebt passed
  */
 void swap_fun(int *i, int *j)
 {
