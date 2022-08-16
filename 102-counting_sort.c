@@ -32,7 +32,7 @@ void counting_sort(int *array, size_t size)
 
 	for (i = 0; i < (int)size; i++)
 	{
-		sorted_arr[--count[array[i]]] = array[i];
+		sorted_arr[count[array[i]]--] = array[i];
 		count[array[i]]--;
 	}
 
@@ -55,7 +55,7 @@ int max_func(int *array, int size)
 	int max = array[0];
 	int i;
 
-	for(i = 1; i < size; i++)
+	for (i = 1; i < size; i++)
 	{
 		if (array[i] > max)
 			max = array[i];
