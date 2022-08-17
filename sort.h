@@ -43,5 +43,8 @@ void swap_sort(int *array, int i, int j);
 int split(int *array, int first_val, int sec_val, size_t size);
 void sorting(int *array, int first_val, int sec_val, size_t size);
 int max_func(int *array, int size);
+void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
+				size_t back);
+void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
 
 #endif
